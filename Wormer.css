@@ -1,0 +1,96 @@
+/*
+    @theme Wormer
+    @author JJ Ying
+    http://JJYing.com
+*/
+
+* {
+    spell-check: disabled;
+}
+
+@base {
+	color: rgba(228, 216, 195, 1.0);
+	background-color: rgba(41, 39, 37, 1.0);
+	selection-background-color: rgba(63, 60, 49, 1.0);
+	insertion-point-color: rgba(248, 248, 242, 1.0);;
+}
+
+string,
+* text.html > tag.html > attribute-value.string.quoted,
+php string delimiter,
+* css > property-value {
+	color: rgba(215, 189, 16, 1.0);
+    spell-check: disabled;
+}
+
+* tag entity.name,
+css > property-name,
+* php keyword,
+operator {
+	color: rgba(249, 49, 100, 1);
+	background-color: rgba(0,0,0,0.0);
+}
+
+* php keyword.definition,
+* php variable,
+* php literal.keyword {
+	color: rgba(196, 196, 196, 1.0);
+	font-style: italic;
+}
+
+js name{
+	color: #6096b5;
+	font-style: italic;
+}
+js function{
+	color: #e4d8c3;
+	color: #857b68;
+}
+
+* comment,
+* php comment content, 
+comment url, 
+comment override-marker,
+* > comment punctuation,
+tag.doctype {
+	color: rgba(178, 170, 138, 0.2);
+	font-style: italic;
+}
+
+* php function name, 
+* php identifier.function,
+attribute-name, 
+* selector.css{
+	color: rgba(142, 121, 96, 1.0);
+}
+/*Less*/
+less {
+	spell-check: disabled;
+}
+less.selector, variable.definition.style.less > property-name,
+less > property-assigner, mixin.less > property-assigner,
+punctuation.definition.variable.less,
+mixin.definition.less{
+{
+	color: rgba(142, 121, 96, 1.0);
+}
+less > property-name, mixin.less > property-name{
+	color: rgba(249, 49, 100, 1);
+}
+less > property-value, variable.style.less > property-name {
+	color: rgba(215, 189, 16, 1.0);
+	spell-check: disabled;
+}
+keyword.important.less {
+	font-weight: bold;
+	color: #6700b9;
+	width: 12px;
+}
+
+mixin.arguments {
+	color: #ada;
+}
+string.quoted.double,string.quoted.single {
+	color: rgba(215, 189, 16, 1.0);
+	background:#191714;
+}
